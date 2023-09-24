@@ -1,0 +1,48 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    margin-top: 20px;
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+#itemContainer {
+    grid-column: span 1;
+    justify-content: space-between;
+    background-color: rgb(247,247,247);
+    box-shadow: -10px 10px 10px rgb(200,200,200, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 400px;
+}
+
+img {
+    width: 150px;
+    max-height: 10%
+}
+
+#title {
+    font-size: 21;
+    font-weight: bold;
+}
+
+#price {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: rgb(130,150,150);
+}
